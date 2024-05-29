@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>1. Geolocation API:</h3>
+    <p>
+        Geolocation API дозволяє отримати географічне розташування користувача з допомогою GPS або інших джерел. Це дозволяє створювати локаційні додатки, картографічні сервіси та інші застосунки, що використовують інформацію про місцезнаходження.
+    </p>
+    <button onclick="getLocation()">Get my location</button>
+    <p id="demo"></p>
+
+    <hr>
+
+    <h3>2. Web Storage API:</h3>
+    <p>
+        Web Storage API дозволяє зберігати дані на стороні клієнта. Завдяки цьому можна зберігати інформацію навіть після закриття браузера або перезавантаження сторінки. Це корисно для збереження налаштувань, локальних даних користувача тощо.
+    </p>
+    <input type="text" id="username" placeholder="Enet your name">
+    <button onclick="saveUsername()">Save</button>
+    <p id="output"></p>
+
+    <hr>
+
+    <h3>3. Device Orientation API:</h3>
+    <p>
+        Device Orientation API дозволяє отримати дані про орієнтацію пристрою у просторі. За допомогою цього API можна створювати ігри та додатки, які реагують на рухи та нахил пристрою.
+    </p>
+    <p id="tilt-info">Angle of inclination:</p>
+
+    <hr>
+
+    <h3>4. MediaDevices API:</h3>
+    <p>
+        MediaDevices API дозволяє отримати доступ до мультимедійних пристроїв, таких як камера та мікрофон. Це корисно для створення фото- та відео-додатків, додатків для розпізнавання облич, QR-кодів та багато іншого.
+    </p>
+    <video id="video" width="250" height="250" autoplay></video>
+    <button onclick="startCamera()">Start the camera</button>
+
+    <hr>
+
+    <h3>5. Vibration API:</h3>
+    <p>
+        Vibration API дозволяє контролювати вібрацію пристрою, якщо він підтримує цю функцію. Використовується для створення вібраційного сповіщення або ефектів у додатках.
+    </p>
+    <button onclick="vibrateDevice()">Vibration</button>
+
+    <hr>
+    <h3>6. Notifications API:</h3>
+    <p>
+        Notifications API дозволяє надсилати сповіщення користувачеві навіть тоді, коли додаток не активний або браузер закрито. Це дозволяє створювати push-сповіщення та інші повідомлення.
+    </p>
+    <button onclick="showNotification()">Show notifications</button>
+
+    <hr>
+
+    <h3>7. Battery Status API:</h3>
+    <p>
+        Battery Status API дозволяє отримувати інформацію про рівень заряду батареї пристрою та статус зарядки. Це дозволяє створювати додатки, які оптимізують свою роботу в залежності від рівня заряду батареї.
+    </p>
+    <p id="battery-level">Рівень заряду батареї: </p>
+
+    <hr>
+
+    <h3>8. Payment Request API:</h3>
+    <p>
+        Payment Request API дозволяє спростити процес оплати у додатках, дозволяючи використовувати збережені дані користувача для швидкої оплати покупок.
+    </p>
+    <button onclick="requestPayment()">Заплатити за замовлення</button>
+
+    <hr>
+
+    <h3>9. Background Sync API:</h3>
+    <p>
+        Background Sync API дозволяє заплановувати синхронізацію даних між додатком та сервером, навіть коли додаток не активний або відключений. Це корисно для забезпечення оновлення даних навіть при нестабільному інтернет-з'єднанні.
+        <b>(Примітка: Цей API може працювати тільки під умовою, що додаток використовує HTTPS.)</b>
+    </p>
+    <p id="sync-status">Статус синхронізації: </p>
+
+    <hr>
+
+    <h3>10. Screen Orientation API:</h3>
+    <p>
+        Screen Orientation API дозволяє зчитувати та контролювати орієнтацію екрана пристрою (портретна або ландшафтна). Це корисно для створення додатків, які адаптують свій вигляд залежно від орієнтації екрана.
+    </p>
+    <p id="orientation-info">Орієнтація екрана: </p>
+
+
+
+    <script src="./js/getLocation.js"></script>
+    <script src="./js/saveUsername.js"></script>
+    <script src="./js/handleOrientation.js"></script>
+    <script src="./js/startCamera.js"></script>
+    <script src="./js/showNotification.js"></script>
+    <script src="./js/getBattery.js"></script>
+    <script src="./js/requestPayment.js"></script>
+    <script src="./js/syncStatus.js"></script>
+    <script src="./js/updateOrientationStatus.js"></script>
+
+</body>
+
+</html>
